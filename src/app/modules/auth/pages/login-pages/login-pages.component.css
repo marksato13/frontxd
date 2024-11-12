@@ -1,0 +1,141 @@
+/* Estilo del contenedor principal */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+/* Estilos de la estructura del formulario */
+.login-container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo de la imagen lateral */
+.login-image {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c6db4;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenedor del formulario */
+.login-form {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 60px;
+}
+
+/* Estilos del formulario */
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form__title {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3c6db4;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Estilo de los campos de entrada */
+.input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* Espacio adicional a la izquierda para el ícono */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  border-color: #3c6db4;
+  box-shadow: 0 0 5px rgba(60, 109, 180, 0.5);
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #3c6db4;
+  font-size: 1.2rem;
+}
+
+/* Botón de envío */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3c6db4;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2b5185;
+}
+
+/* Enlace de recuperación de contraseña */
+.form__link {
+  display: block;
+  text-align: center;
+  color: #005bc4;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+
+/* Mensaje de error */
+.text-invalid {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Adaptabilidad */
+@media screen and (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-image, .login-form {
+    width: 100%;
+  }
+}

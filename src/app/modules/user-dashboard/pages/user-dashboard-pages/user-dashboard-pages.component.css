@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.user-dashboard, .profile {
+  padding: 20px;
+}
+
+.user-dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  background-color: #f0f4f8;
+}
+
+.button-seguridad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+  padding: 20px;
+  background-color: #4a76a8;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.button-seguridad:hover {
+  background-color: #38598b;
+  transform: translateY(-5px);
+}
+
+.icon-dragon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.profile {
+  width: 25%;
+  background-color: #2e4fb3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.conte {
+  background-color: #3c6db4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.conte h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-image {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.auth-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4a76a8;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #38598b;
+}
+
+.auth-icon {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1250px) {
+  .profile {
+    width: 30%;
+  }
+  .user-dashboard {
+    width: 70%;
+  }
+  .button-seguridad {
+    width: 180px;
+    height: 180px;
+  }
+}
